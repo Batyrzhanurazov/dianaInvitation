@@ -314,7 +314,7 @@ body {
 
 .invite-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px, 8vw, 38px);
+  font-size: clamp(36px, 9vw, 46px);
   font-weight: 400;
   font-style: italic;
   color: var(--ink);
@@ -324,9 +324,9 @@ body {
 
 .invite-body {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(15px, 4vw, 18px);
+  font-size: clamp(18px, 5vw, 22px);
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.6;
   color: var(--ink-2);
 }
 
