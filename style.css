@@ -800,8 +800,8 @@ body {
   display: flex;
 }
 
-.rsvp-form.hidden {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 .success-icon {

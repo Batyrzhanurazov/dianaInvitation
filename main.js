@@ -142,6 +142,7 @@
         body: JSON.stringify({ name, rsvp })
       });
     } catch (_) { /* offline — still show success */ }
+    document.querySelectorAll('#p6 .content > .ru-only, #p6 .content > .kz-only').forEach(el => el.classList.add('hidden'));
     document.getElementById('rsvpForm').classList.add('hidden');
     document.getElementById('rsvpSuccess').classList.add('show');
   }
