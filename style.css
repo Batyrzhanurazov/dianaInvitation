@@ -275,10 +275,10 @@ body {
 }
 
 .page-label {
-  font-family: 'Jost', sans-serif;
-  font-weight: 200;
-  font-size: 9px;
-  letter-spacing: .4em;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--ink-light);
   margin-bottom: 20px;
@@ -342,17 +342,17 @@ body {
 }
 
 .event-date-big span {
-  font-family: 'IM Fell English', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   color: var(--gold);
   font-size: .65em;
 }
 
 .event-year {
-  font-family: 'Jost', sans-serif;
-  font-weight: 200;
-  font-size: 13px;
-  letter-spacing: .4em;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .1em;
   color: var(--ink-light);
   margin-top: 4px;
 }
@@ -361,7 +361,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 4px;
-  margin-top: 28px;
+  margin-top: 2px;
 }
 
 .t-cell {
@@ -382,10 +382,10 @@ body {
 }
 
 .t-label {
-  font-family: 'Jost', sans-serif;
-  font-size: 8px;
-  font-weight: 200;
-  letter-spacing: .25em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--ink-light);
   margin-top: 4px;
@@ -435,12 +435,12 @@ body {
 }
 
 .location-address {
-  font-family: 'Jost', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 1.7;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--ink-2);
-  letter-spacing: .04em;
+  letter-spacing: .02em;
   margin-bottom: 24px;
 }
 
@@ -863,4 +863,12 @@ body {
     border-radius: 32px;
     max-height: 900px;
   }
+}
+
+html.lang-ru .kz-only {
+  display: none !important;
+}
+
+html.lang-kz .ru-only {
+  display: none !important;
 }
