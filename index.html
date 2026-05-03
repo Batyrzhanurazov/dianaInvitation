@@ -184,12 +184,22 @@
                 <div class="grain"></div>
                 <div class="vignette"></div>
                 <div class="content">
-                    <p class="page-label">Моменты</p>
-                    <div class="invite-title">Фотографии</div>
-                    <div class="divider"></div>
-                    <p class="invite-body" style="font-size: clamp(14px,3.8vw,16px); margin-bottom: 24px;">
-                        Мы будем рады, если вы поделитесь<br />своими фотографиями и видео<br />в нашей Telegram-группе:
-                    </p>
+                    <div class="ru-only">
+                        <p class="page-label">Моменты</p>
+                        <div class="invite-title">Фотографии</div>
+                        <div class="divider"></div>
+                        <p class="invite-body" style="font-size: clamp(14px,3.8vw,16px); margin-bottom: 24px;">
+                            Вы можете поделиться фото и видео с мероприятия в этом Телеграм-канале
+                        </p>
+                    </div>
+                    <div class="kz-only">
+                        <p class="page-label">Сәттер</p>
+                        <div class="invite-title">Фотосуреттер</div>
+                        <div class="divider"></div>
+                        <p class="invite-body" style="font-size: clamp(14px,3.8vw,16px); margin-bottom: 24px;">
+                            Тойдағы сурет, видеоны осы Телеграм каналға жібере аласыздар
+                        </p>
+                    </div>
 
                     <a href="https://t.me/your_group_link" target="_blank" rel="noopener" class="tg-btn interactive">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -197,7 +207,8 @@
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
                                 fill="currentColor" />
                         </svg>
-                        Telegram Группа
+                        <span class="ru-only">Телеграм-канал</span>
+                        <span class="kz-only">Телеграм каналы</span>
                     </a>
                 </div>
             </div>
@@ -209,47 +220,62 @@
                 <div class="grain"></div>
                 <div class="vignette"></div>
                 <div class="content">
-                    <p class="page-label">Подтверждение</p>
-                    <div class="rsvp-title">Придёте?</div>
-                    <p class="rsvp-sub">Пожалуйста, ответьте до 1 июня</p>
+                    <div class="ru-only">
+                        <p class="page-label">Подтверждение</p>
+                        <div class="rsvp-title">Анкета</div>
+                        <p class="rsvp-sub">Просим Вас заполнить анкету</p>
+                    </div>
+                    <div class="kz-only">
+                        <p class="page-label">Растау</p>
+                        <div class="rsvp-title">Сауалнама</div>
+                        <p class="rsvp-sub">Тойға қатысуыңызды растауыңызды сұраймыз</p>
+                    </div>
 
                     <form class="rsvp-form interactive" id="rsvpForm" onsubmit="return false;">
                         <div class="field-wrap">
-                            <label class="field-label" for="guestName">Ваше имя</label>
+                            <label class="field-label ru-only" for="guestName">Ваше имя (если вы придете с супругом(-ой), просим указать оба имени)</label>
+                            <label class="field-label kz-only" for="guestName">Аты-жөніңіз (жұбайыңызбен келетін болсаңыз, екеуіңіздің де атыңызды жазуыңызды өтінеміз)</label>
                             <input class="field-input interactive" type="text" id="guestName" name="name"
-                                placeholder="Введите имя" autocomplete="off" />
+                                placeholder="" autocomplete="off" />
                         </div>
 
                         <div class="radio-group interactive">
                             <label class="radio-opt">
                                 <input type="radio" name="rsvp" value="yes" checked />
                                 <span class="radio-box"></span>
-                                <span class="radio-text">Да, буду ✦</span>
+                                <span class="radio-text ru-only">Приду</span>
+                                <span class="radio-text kz-only">Қатысамын</span>
                             </label>
                             <label class="radio-opt">
                                 <input type="radio" name="rsvp" value="with_plus_one" />
                                 <span class="radio-box"></span>
-                                <span class="radio-text">Буду с парой</span>
+                                <span class="radio-text ru-only">Буду вместе с супругом (-ой)</span>
+                                <span class="radio-text kz-only">Жұбайыммен келемін</span>
                             </label>
                             <label class="radio-opt">
                                 <input type="radio" name="rsvp" value="no" />
                                 <span class="radio-box"></span>
-                                <span class="radio-text">К сожалению, не получится</span>
+                                <span class="radio-text ru-only">К сожалению, не смогу присуствовать</span>
+                                <span class="radio-text kz-only">Өкінішке орай, келе алмаймын</span>
                             </label>
                         </div>
 
                         <button class="submit-btn interactive" id="submitBtn" type="button" onclick="submitRSVP()">
-                            Отправить
+                            <span class="ru-only">Отправить</span>
+                            <span class="kz-only">Жіберу</span>
                         </button>
                         <button class="reset-btn interactive" id="resetBtn" type="button" onclick="showPage(0)">
-                            В начало
+                            <span class="ru-only">В начало</span>
+                            <span class="kz-only">Басына қайту</span>
                         </button>
                     </form>
 
                     <div class="rsvp-success" id="rsvpSuccess">
                         <div class="success-icon">✓</div>
-                        <div class="success-msg">Спасибо!</div>
-                        <p class="success-sub">Мы получили ваш ответ.<br />До встречи!</p>
+                        <div class="success-msg ru-only">Спасибо!</div>
+                        <div class="success-msg kz-only">Рақмет!</div>
+                        <p class="success-sub ru-only">Мы получили ваш ответ.<br />До встречи!</p>
+                        <p class="success-sub kz-only">Жауабыңыз қабылданды.<br />Кездескенше!</p>
                     </div>
                 </div>
             </div>

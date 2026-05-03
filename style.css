@@ -124,6 +124,7 @@ body {
 .page.active {
   opacity: 1;
   pointer-events: none;
+  z-index: 55;
   /* nav zones handle clicks */
 }
 
@@ -575,9 +576,9 @@ body {
   border: 1px solid #229ED9;
   background: transparent;
   color: #229ED9;
-  font-family: 'Jost', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: .15em;
   text-transform: uppercase;
   text-decoration: none;
@@ -604,9 +605,9 @@ body {
 }
 
 .rsvp-sub {
-  font-family: 'Jost', sans-serif;
-  font-size: 11px;
-  font-weight: 200;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: .15em;
   color: var(--ink-light);
   margin-bottom: 26px;
@@ -623,11 +624,10 @@ body {
 }
 
 .field-label {
-  font-family: 'Jost', sans-serif;
-  font-size: 9px;
-  font-weight: 300;
-  letter-spacing: .25em;
-  text-transform: uppercase;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .02em;
   color: var(--ink-light);
   display: block;
   margin-bottom: 6px;
@@ -711,11 +711,12 @@ body {
 .submit-btn {
   width: 100%;
   border: 1px solid var(--ink);
+  border-radius: 8px;
   background: var(--ink);
   color: var(--paper);
-  font-family: 'Jost', sans-serif;
-  font-size: 10px;
-  font-weight: 300;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: .3em;
   text-transform: uppercase;
   padding: 15px;
@@ -741,9 +742,9 @@ body {
   background: transparent;
   border: none;
   color: var(--ink-light);
-  font-family: 'Jost', sans-serif;
-  font-size: 10px;
-  font-weight: 300;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: .3em;
   text-transform: uppercase;
   padding: 10px 15px;
@@ -796,9 +797,9 @@ body {
 }
 
 .success-sub {
-  font-family: 'Jost', sans-serif;
-  font-size: 11px;
-  font-weight: 200;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: .15em;
   color: var(--ink-light);
 }

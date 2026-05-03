@@ -133,7 +133,8 @@
     }
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
-    btn.textContent = 'Отправляем...';
+    const isRu = document.documentElement.classList.contains('lang-ru');
+    btn.textContent = isRu ? 'Отправляем...' : 'Жіберілуде...';
     try {
       await fetch(RSVP_API, {
         method: 'POST',
