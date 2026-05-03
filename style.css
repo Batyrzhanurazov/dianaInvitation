@@ -181,6 +181,33 @@ body {
   text-align: center;
 }
 
+.hero-photo {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  position: relative;
+  animation: photo-in 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+}
+
+@keyframes photo-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .invite-label {
   font-family: 'Jost', sans-serif;
   font-weight: 200;
