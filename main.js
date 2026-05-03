@@ -1,5 +1,5 @@
 /* ── CONFIG ─────────────────────────────── */
-  const TOTAL = 5;
+  const TOTAL = 6;
   const WEDDING_DATE = new Date('2026-06-05T18:00:00');
   // Replace with your actual API endpoint:
   const RSVP_API = '/api/rsvp';

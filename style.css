@@ -560,18 +560,51 @@ body {
 }
 
 /* ────────────────────────────────────────────
-     PAGE 5 — RSVP
+     PAGE 5 — PHOTOS & PAGE 6 — RSVP
   ─────────────────────────────────────────── */
 #p5 {
+  background: var(--paper);
+}
+
+#p6 {
   background: var(--paper-3);
 }
 
-#p5 .content {
+#p5 .content,
+#p6 .content {
   text-align: center;
   z-index: 5;
   position: relative;
   width: 100%;
   max-width: 340px;
+}
+
+.tg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border: 1px solid #229ED9;
+  background: transparent;
+  color: #229ED9;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+  position: relative;
+  z-index: 60;
+  pointer-events: all;
+  border-radius: 2px;
+}
+
+.tg-btn:hover {
+  background: #229ED9;
+  color: var(--paper);
 }
 
 .rsvp-title {
